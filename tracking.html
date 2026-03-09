@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tracking Progress - FitWorld</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>FitWorld</h1>
+<nav>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="trainers.html">Trainers</a>
+<a href="pricing.html">Pricing</a>
+<a href="contact.html">Contact</a>
+<a href="login.html?next=tracker">Tracking Progress</a>
+</nav>
+</header>
+
+<div class="container">
+<h2>Tracking Progress</h2>
+<p class="dash-subtitle">Mark each day after finishing your schedule.</p>
+
+<div id="trackerSection" class="tracker-section" style="display:none;">
+<div id="progressNotification" class="progress-note"></div>
+<div id="monthSummary" class="month-summary"></div>
+<div id="progressTable"></div>
+<div class="dashboard-actions">
+<button onclick="saveProgress()">Save Progress</button>
+<button onclick="checkProgressNotification()">Check Missing Days</button>
+<a class="action-link" href="index.html">Back To Home</a>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

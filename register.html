@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - FitWorld</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>FitWorld</h1>
+<nav>
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="programs.html">Programs</a>
+<a href="trainers.html">Trainers</a>
+<a href="pricing.html">Pricing</a>
+<a href="contact.html">Contact</a>
+<a href="login.html?next=tracker">Tracking Progress</a>
+</nav>
+</header>
+
+<div class="login-container">
+<div class="login-box">
+<h2>Register</h2>
+
+<form onsubmit="registerUser(event)">
+<input type="text" id="registerUsername" placeholder="Username" required>
+<input type="password" id="registerPassword" placeholder="Password" required>
+<button type="submit">Register</button>
+</form>
+
+<div id="generatedCodeBox" class="code-box" style="display:none;">
+<p>Your Unique Login Code</p>
+<h3 id="generatedCodeValue"></h3>
+<small>Use this code while logging in. It is compulsory.</small>
+</div>
+
+<a id="backToLoginBtn" class="action-link" href="login.html" style="display:none;">
+Go Back To Login
+</a>
+</div>
+</div>
+
+<footer>
+<p>© 2026 FitWorld Fitness Platform</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+

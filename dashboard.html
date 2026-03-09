@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>BMI Calculator</h2>
+<p class="dash-subtitle">Enter your details to check BMI and get your weekly plan</p>
+
+<input type="number" id="height" placeholder="Height (cm)">
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<div class="dashboard-actions">
+<button onclick="calculateBMI()">Calculate BMI</button>
+<a class="action-link" href="index.html">Go Back To Home Page</a>
+</div>
+
+<h3 id="result"></h3>
+
+<div id="schedule"></div>
+
+<div id="trackProgressBlock" class="tracker-section" style="display:none;">
+<h3>Progress</h3>
+<p class="dash-subtitle">Track your daily completion in a separate page.</p>
+<div class="dashboard-actions">
+<a class="action-link" href="tracking.html">Track My Progress</a>
+</div>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
